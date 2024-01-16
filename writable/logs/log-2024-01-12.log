@@ -1,0 +1,58 @@
+CRITICAL - 2024-01-12 08:22:56 --> Undefined property: CodeIgniter\HTTP\IncomingRequest::$getPost
+in APPPATH/Controllers/Articulos.php on line 41.
+ 1 APPPATH/Controllers/Articulos.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\IncomingRequest::$getPost', '/Applications/MAMP/htdocs/CodeIgniter/app/Controllers/Articulos.php', 41)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Articulos->guardar()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-12 08:23:46 --> Undefined property: CodeIgniter\HTTP\IncomingRequest::$getPost
+in APPPATH/Controllers/Articulos.php on line 41.
+ 1 APPPATH/Controllers/Articulos.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\IncomingRequest::$getPost', '/Applications/MAMP/htdocs/CodeIgniter/app/Controllers/Articulos.php', 41)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Articulos->guardar()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-12 08:23:47 --> Undefined property: CodeIgniter\HTTP\IncomingRequest::$getPost
+in APPPATH/Controllers/Articulos.php on line 41.
+ 1 APPPATH/Controllers/Articulos.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\IncomingRequest::$getPost', '/Applications/MAMP/htdocs/CodeIgniter/app/Controllers/Articulos.php', 41)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Articulos->guardar()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-12 08:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-12 08:24:42 --> Invalid file: "templates/alta_articulos.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/alta_articulos.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('templates/alta_articulos', [], true)
+ 3 APPPATH/Controllers/Articulos.php(10): view('templates/alta_articulos')
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Articulos->alta_articulos()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-12 08:25:36 --> Call to undefined function validation_list_errors()
+in APPPATH/Views/alta_articulos.php on line 18.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('alta_articulos', [], true)
+ 4 APPPATH/Controllers/Articulos.php(10): view('alta_articulos')
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Articulos->alta_articulos()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-12 08:25:48 --> Call to undefined function validation_list_errors()
+in APPPATH/Views/alta_articulos.php on line 18.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('alta_articulos', [], true)
+ 4 APPPATH/Controllers/Articulos.php(10): view('alta_articulos')
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Articulos->alta_articulos()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-12 08:26:06 --> Undefined property: CodeIgniter\HTTP\IncomingRequest::$getPost
+in APPPATH/Controllers/Articulos.php on line 41.
+ 1 APPPATH/Controllers/Articulos.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\IncomingRequest::$getPost', '/Applications/MAMP/htdocs/CodeIgniter/app/Controllers/Articulos.php', 41)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Articulos->guardar()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
