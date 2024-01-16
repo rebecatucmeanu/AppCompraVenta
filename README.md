@@ -1,4 +1,2 @@
 # Práctica de compra-venta de artículos
-
-## Desarrollo de aplicaciones web
-
+## Desarrollo de aplicaciones web
