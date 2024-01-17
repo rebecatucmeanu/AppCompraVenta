@@ -45,6 +45,6 @@ class Articulos extends BaseController
         $modelo = model(ArticulosModel::class);
         $data['articulos'] = $modelo->findAll();
         $data['titulo'] = 'Listado de artículos';
-        return wiev('templates/header', $data).view('articulos');
+        return view('templates/header', $data).view('articulos');
     }
 } 
