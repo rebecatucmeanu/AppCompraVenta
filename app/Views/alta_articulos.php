@@ -14,17 +14,17 @@
 </head>
 <body>
     <h1>Alta de artículos de ropa</h1>
-    <div>
-        <?php
-            if(isset($guardado))
-            {
-            ?>
-                <p>Los datos se han guardado correctamente.</p>
-                <a href="<?php echo base_url()?>">Volver</a>
-            <?php    
-            }
+    <div> <?php
+        if(isset($guardado))
+        {
         ?>
-    </div>
+            <p>Los datos se han guardado correctamente.</p>
+            <a href="<?php echo base_url()?>">Volver</a>
+        <?php    
+        }
+        else
+        {
+    ?> </div>
     <form method="post" action="<?php echo base_url('articulos/guardar') ?>" enctype="multipart/form-data">
         <div> 
             <label for="nombre">Nombre</label>
@@ -46,5 +46,8 @@
             <input type="submit" name="Enviar">
         </div>
     </form>
+    <?php
+    }
+    ?>
 </body>
 </html>
