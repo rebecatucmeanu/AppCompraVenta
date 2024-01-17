@@ -51,7 +51,7 @@ class Articulos extends BaseController
     public function mostrar($id_articulo)
     {
         $modelo = model(ArticulosModel::class);
-        $articculo = $modelo->find($id_articulo);
+        $articulo = $modelo->find($id_articulo);
         $data['titulo'] = 'Detalle de artículo';
         return view('templates/header', $data).view('articulo');
     }
