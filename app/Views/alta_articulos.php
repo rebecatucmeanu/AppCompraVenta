@@ -14,7 +14,7 @@
 </head>
 <body>
     <h1>Alta de artículos de ropa</h1>
-    <form method="post" action="<?php echo base_url('articulos/guardar') ?>">
+    <form method="post" action="<?php echo base_url('articulos/guardar') ?>" enctype="multipart/form-data">
         <label for="nombre">Nombre</label>
         <input type="text" name="nombre"/><br>
         <label for="nombre">Marca</label>

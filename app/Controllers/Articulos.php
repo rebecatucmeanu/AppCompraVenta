@@ -32,6 +32,9 @@ class Articulos extends BaseController
         $data['nombre'] = $this->request->getPost('nombre');
         $data['marca'] = $this->request->getPost('marca');
         $data['precio'] = $this->request->getPost('precio');
+        
+        $imagen = $this->request->getFile('imagen');
+        $imagen->move('../public/uploads', $imagen->getName());
 
         $modelo = model(ArticulosModel::class);
         $modelo->save($data);
