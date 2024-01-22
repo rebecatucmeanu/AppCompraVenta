@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artículos BBDD</title>
     <style>
-        form, h1 
+        h1 
         {
             padding-left: 25px;
+        }
+
+        form {
+            padding-left: 43%;
+            padding-top: 7%;
         }
     </style>
 </head>
@@ -25,7 +30,7 @@
         else
         {
     ?> </div>
-    <form method="post" enctype="multipart/form-data" action="controlador.php">
+    <form method="post" enctype="multipart/form-data" action="<?php echo base_url('Articulos/guardar') ?>">
         <div> 
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre"/><br>
@@ -40,7 +45,7 @@
         </div>
         <div>
             <label for="imagen">Imagen</label>
-            <input type="file" name="imagen" class="form-control"  />
+            <input type="file" name="archivo" class="form-control"  />
         </div>
         <div>
             <input type="submit" name="Enviar">

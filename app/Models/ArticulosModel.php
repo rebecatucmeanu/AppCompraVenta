@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class ArticulosModel extends Model
 {
     protected $table = 'articulos';
-    protected $allowFields = ['nombre', 'marca', 'precio'];
+    protected $allowFields = ['nombre', 'marca', 'precio', 'archivo'];
 
     // // Para obtener todos los artículos
     // public function getArticulos()
