@@ -25,7 +25,7 @@
         else
         {
     ?> </div>
-    <form method="post" action="<?php echo base_url('articulos/guardar') ?>" enctype="multipart/form-data">
+    <form method="post" enctype="multipart/form-data" action="controlador.php">
         <div> 
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre"/><br>
@@ -40,7 +40,7 @@
         </div>
         <div>
             <label for="imagen">Imagen</label>
-            <input type="file" name="imagen">
+            <input type="file" name="imagen" class="form-control"  />
         </div>
         <div>
             <input type="submit" name="Enviar">
