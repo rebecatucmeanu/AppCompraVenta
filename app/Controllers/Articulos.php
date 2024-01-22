@@ -33,10 +33,9 @@ class Articulos extends BaseController
         $data['marca'] = $this->request->getPost('marca');
         $data['precio'] = $this->request->getPost('precio');
         
-        $imagen = $request->getFile('archivo');
-        $nombreArchivo = $imagen->getName();
+        $imagen = $this->request->getFile('archivo');
         $nombreAleatorio = $imagen->getRandomName();
-        $imagen->move('../public/uploads', $nombreImagen);
+        $imagen->move('../public/uploads', $nombreAleatorio);
 
         $modelo = model(ArticulosModel::class);
         $modelo->save($data);
