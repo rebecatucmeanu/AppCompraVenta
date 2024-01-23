@@ -8,12 +8,7 @@ class ArticulosModel extends Model
 {
     protected $table = 'articulos';
     protected $allowFields = ['nombre', 'marca', 'precio', 'archivo'];
-
-    // // Para obtener todos los artículos
-    // public function getArticulos()
-    // {
-    //     return $this->findAll();
-    // }
+    
     public function getArticulo($id)
     {
         return $this->find($id);
