@@ -14,3 +14,15 @@ INFO - 2024-01-23 08:06:01 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-01-23 08:22:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-01-23 08:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-01-23 08:23:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 08:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-23 08:56:37 --> Undefined variable $articulos
+in APPPATH/Views/articulos.php on line 15.
+ 1 APPPATH/Views/articulos.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $articulos', '/Applications/MAMP/htdocs/AppCompraVenta/app/Views/articulos.php', 15)
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/AppCompraVenta/app/Views/articulos.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('articulos', [], true)
+ 5 APPPATH/Controllers/Articulos.php(20): view('articulos')
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Articulos->ver_articulos()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
