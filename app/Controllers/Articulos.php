@@ -38,7 +38,14 @@ class Articulos extends BaseController
         $imagen->move('../public/uploads', $nombreAleatorio);
 
         $modelo = model(ArticulosModel::class);
-        $modelo->save($data);
+
+        if ($modelo->save($data))
+        {
+            // Redirigir a una vista que diga "datos guardados."
+        } else 
+        {
+            // Redirigir a una vista que diga "error al guardar datos."
+        }
     }
 
     public function mostrarTodo()
