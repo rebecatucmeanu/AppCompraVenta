@@ -13,11 +13,11 @@ class Articulos extends BaseController
 
     public function ver_articulos(): string
     {
-        $session = session();
-        $session->set('nombre', 'Rebeca');
-        // echo $session->get('texto');
-        // // exit;  // Esto sirve para que te muestre estrictamente el código hasta este punto, y no todo lo demás.
-        return view('templates/header').view('articulos');
+        $modelo = new ArticulosModel();
+
+        $articulos = $modelo->findAll();
+
+        return view('templates/header', ['articulos' => $articulos]);
     }
 
     public function crear(): string
