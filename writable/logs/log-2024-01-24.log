@@ -86,3 +86,33 @@ FROM `articulos`', [], false)
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-24 09:16:13 --> The route for "templates/headertemplates/datos_guardados" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 62.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('templates/headertemplates/datos_guardados')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Articulos.php(44): redirect('templates/headertemplates/datos_guardados')
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Articulos->guardar()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-24 09:17:00 --> Invalid file: "templatews/header.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templatews/header.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('templatews/header', [], true)
+ 3 APPPATH/Controllers/Articulos.php(45): view('templatews/header')
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Articulos->guardar()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-24 09:19:19 --> Call to a member function getRandomName() on null
+in APPPATH/Controllers/Articulos.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Articulos->guardar()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-24 09:19:26 --> Call to a member function getRandomName() on null
+in APPPATH/Controllers/Articulos.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Articulos->guardar()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

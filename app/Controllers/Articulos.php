@@ -41,10 +41,10 @@ class Articulos extends BaseController
 
         if ($modelo->save($data))
         {
-            // Redirigir a una vista que diga "datos guardados."
+            return view('templates/header').view('templates/datos_guardados');
         } else 
         {
-            // Redirigir a una vista que diga "error al guardar datos."
+            return view('templates/header').view('templates/error_bbdd');
         }
     }
 
