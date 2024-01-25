@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controllers;
-
+// Modelo Usuarios
 use App\Models\UsuariosModel;
 
 class Usuarios extends BaseController

@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controllers;
-
+// Modelo Artículos
 use App\Models\ArticulosModel;
 
 class Articulos extends BaseController
