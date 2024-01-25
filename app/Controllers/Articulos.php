@@ -40,12 +40,28 @@ class Articulos extends BaseController
 
         $modelo = model(ArticulosModel::class);
 
-        if ($modelo->save($data)) {
+        if ($modelo->save($data)) 
+        {
             return view('templates/header').view('templates/datos_guardados');
         } else {
             return view('templates/header').view('templates/error_bbdd');
         }
     }
+
+    public function crear_usuario() 
+    {
+        $data = [];
+        $data['nombre'] = $this->request->getPost('nombre');
+        $data['contraseña'] = $this->request->getPost('contraseña');
+
+        $modelo = model(UsuariosModel::class);
+        if ($modelo->save($data))
+        {
+            return view('templates/header').view('templates/usuario_guardado');
+        } else {
+            return view('templates/header').view('templates/error_usuario_guardado');
+        }
+    } 
 
     public function mostrarTodo()
     {
