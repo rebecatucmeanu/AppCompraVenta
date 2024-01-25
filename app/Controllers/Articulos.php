@@ -63,4 +63,23 @@ class Articulos extends BaseController
         $data['titulo'] = 'Detalle de artículo';
         return view('templates/header', $data).view('articulo');
     }
+
+    public function iniciar_sesion()
+    {
+        // Validación del formulario de inicio de sesión
+        $validacionSesion = [
+            'username' => 'required',
+            'password' => 'required',
+        ];
+
+        if (!$this->validate($validacionSesion)) {
+            // Si la validación falla, vuelve a cargar el formulario de inicio de sesión
+            return view('templates/header').view('registro_usuario_fallido');
+        }
+
+        // Validar credenciales y establecer la sesión
+        // ...
+
+        return redirect()->to('inicio_sesion'); // Cambia 'dashboard' por la URL de la página que deseas mostrar después del inicio de sesión
+    }
 } 
