@@ -14,7 +14,7 @@
 </head>
 <body>
     <h1>Usuarios</h1>
-    <form action="" method="post">
+    <form method="post" enctype="multipart/form-data" action="<?php echo base_url('Usuarios/guardar_usuario') ?>">
         <label for="nombre">Nombre</label>
         <input type="text" name="nombre"/><br>
         <label for="contraseña">Contraseña</label>
