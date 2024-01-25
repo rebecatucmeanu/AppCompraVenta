@@ -17,10 +17,8 @@
     <form action="" method="post">
         <label for="nombre">Nombre</label>
         <input type="text" name="nombre"/><br>
-        <label for="direccion">Dirección</label>
-        <input type="text" name="direccion"/><br>
-        <label for="dni">DNI</label>
-        <input type="text" name="dni"/><br>
+        <label for="contraseña">Contraseña</label>
+        <input type="text" name="cotraseña"/><br>
         <input type="submit" name="Enviar">
     </form>
 </body>

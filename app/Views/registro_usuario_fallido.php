@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de usuarios</title>
+    <title>Registro de usuarios (fallo)</title>
     <style>
         form, h1, h2
         {
@@ -19,10 +19,8 @@
     <form action="" method="post">
         <label for="nombre">Nombre</label>
         <input type="text" name="nombre"/><br>
-        <label for="direccion">Dirección</label>
-        <input type="text" name="direccion"/><br>
-        <label for="dni">DNI</label>
-        <input type="text" name="dni"/><br>
+        <label for="contrasela">Contraseña</label>
+        <input type="text" name="contrasela"/><br>
         <input type="submit" name="Enviar">
     </form>
 </body>
