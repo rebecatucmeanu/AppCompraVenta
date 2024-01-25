@@ -18,7 +18,7 @@
         <label for="nombre">Nombre</label>
         <input type="text" name="nombre"/><br>
         <label for="contraseña">Contraseña</label>
-        <input type="text" name="contraseña"/><br>
+        <input type="password" name="contraseña"/><br>
         <input type="submit" name="Enviar">
     </form>
 </body>

@@ -31,12 +31,25 @@
         background-color: #a742f5;
         color: white;
     }
+
+    p 
+    {
+        color: #a742f5;
+    }
 </style>
 </head>
 <body>
     <div class="menu">
-        <a href="<?php echo base_url() ?>articulos/alta_articulos" class="alta">Dar de alta un artículo</a>
         <a href="<?php echo base_url() ?>articulos/ver_articulos" class="artículos">Artículos</a>
         <a href="<?php echo base_url() ?>usuarios/crear_usuario" class="registro">Registrar un usuario</a>
         <a href="<?php echo base_url() ?>usuarios/mostrar_login" class="sesion">Iniciar sesión</a>
+
+        <?php
+        $session = session();
+        if ($session->has('usuario') && $session->get('usuario')['nombre']) {
+            // Si el usuario está autenticado, muestra el mensaje
+            echo '<p>Gestión de ' . $session->get('usuario')['nombre'] . '</p>';
+        }
+        ?>
     </div>
+    <a href="<?php echo base_url() ?>usuarios/cerrar_sesion"><button>Cerrar sesión</button></a>

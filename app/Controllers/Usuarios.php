@@ -44,14 +44,15 @@ class Usuarios extends BaseController
         $data = [];
         $data['nombre'] = $this->request->getPost('nombre');
         $data['contraseña'] = $this->request->getPost('contraseña');
-
+       
         $modelo = model(UsuariosModel::class);
         $usuario = $modelo->where($data)->first();
 
+
         if ($usuario) {
             $session = session();
-            $session->set('usuario', $usuario);
-
+            $session->set('usuario', $usuario); 
+            
             return  view('templates/header').view('inicio_sesion_exito');
         } else {
             return view('templates/header').view('error_inicio_sesion');
@@ -63,6 +64,7 @@ class Usuarios extends BaseController
         $session = session();
         $session->destroy();
 
-        return redirect()->to('sesion_cerrada');
+        echo 'Sesión cerrada';
+        return redirect()->to(base_url('Usuarios/mostrar_login'));
     }
 }
