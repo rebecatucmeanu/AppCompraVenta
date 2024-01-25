@@ -24,7 +24,8 @@
         {
         ?>
             <p>Los datos se han guardado correctamente.</p>
-            <a href="<?php echo base_url()?>">Volver</a>
+            <a href="<?php echo base_url() ?>articulos/ver_articulos">Ver artículos</a>
+            <a href="<?php echo base_url() ?>articulos/crear">Dar de alta otro artículo</a>
         <?php    
         }
         else
