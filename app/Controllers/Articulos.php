@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\ArticulosModel;
+use App\Models\UsuariosModel;
 
 class Articulos extends BaseController
 {
