@@ -13,12 +13,12 @@
     </style>
 </head>
 <body>
-    <h1>Usuarios</h1>
+    <h1>Registrarse</h1>
     <form method="post" enctype="multipart/form-data" action="<?php echo base_url('Usuarios/guardar_usuario') ?>">
         <label for="nombre">Nombre</label>
         <input type="text" name="nombre"/><br>
         <label for="contraseña">Contraseña</label>
-        <input type="text" name="cotraseña"/><br>
+        <input type="text" name="contraseña"/><br>
         <input type="submit" name="Enviar">
     </form>
 </body>

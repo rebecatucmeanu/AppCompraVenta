@@ -18,7 +18,7 @@ class Articulos extends BaseController
 
         $articulos = $modelo->findAll();
 
-        return view('templates/header', ['articulos' => $articulos]);
+        return view('templates/header', ['articulos' => $articulos]).view('articulos');
     }
 
     public function crear(): string
@@ -37,6 +37,8 @@ class Articulos extends BaseController
         $imagen = $this->request->getFile('archivo');
         $nombreAleatorio = $imagen->getRandomName();
         $imagen->move('../public/uploads', $nombreAleatorio);
+
+        $data['archivo'] = $nombreAleatorio;
 
         $modelo = model(ArticulosModel::class);
 

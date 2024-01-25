@@ -38,5 +38,5 @@
         <a href="<?php echo base_url() ?>articulos/alta_articulos" class="alta">Dar de alta un artículo</a>
         <a href="<?php echo base_url() ?>articulos/ver_articulos" class="artículos">Artículos</a>
         <a href="<?php echo base_url() ?>usuarios/crear_usuario" class="registro">Registrar un usuario</a>
-        <a href="<?php echo base_url() ?>usuarios/inicio_sesion" class="sesion">Iniciar sesión</a>
+        <a href="<?php echo base_url() ?>usuarios/mostrar_login" class="sesion">Iniciar sesión</a>
     </div>

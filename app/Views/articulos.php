@@ -15,14 +15,14 @@
         <?php foreach ($articulos as $articulo): ?>
             <div class="col"> 
                 <div class="card h-100 shadow-sm"> 
-                    <img src="<?php base_url('uploads/' . $articulo['archivo']); ?>" class="card-img-top" alt="Artículo"> 
+                    <img src="<?php echo base_url('uploads/' . $articulo['archivo']); ?>" class="card-img-top" alt="Artículo"> 
                     <div class="card-body"> 
                         <div class="clearfix mb-3"> 
                             <span class="float-end price-hp"><?php base_url('articulos/mostrar/'.($articulo['precio'])); ?>&euro;</span> 
                         </div> 
                         <h5 class="card-title"><?php base_url('articulos/mostrar/'.($articulo['nombre'])); ?></h5> 
                         <div class="text-center my-4"> 
-                            <a href="<?php base_url('articulos/mostrar/'.$articulo['id']); ?>" class="btn btn-warning">Ver artículo</a>
+                            <a href="<?php base_url('articulos/mostrar/'.$articulo['precio']); ?>" class="btn btn-warning">Ver artículo</a>
                         </div> 
                     </div> 
                 </div> 

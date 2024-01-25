@@ -33,13 +33,13 @@ class Usuarios extends BaseController
         }
     } 
 
-    public function inicio_sesion(): string
+    public function mostrar_login(): string
     {
         helper('form');
         return view('templates/header').view('inicio_sesion');
     }
 
-    public function inicio_sesion_exito() 
+    public function comprobar_login() 
     {
         $data = [];
         $data['nombre'] = $this->request->getPost('nombre');
