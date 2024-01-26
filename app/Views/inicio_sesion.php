@@ -6,9 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de usuarios</title>
     <style>
-        form, h1
+        body 
+        {
+            margin: 0;
+            background-color: #A4BBCE;
+            color: #663F50;
+        }
+
+        h1 
         {
             padding-left: 25px;
+            color: #51EAD9;
+        }
+
+        form 
+        {
+            padding-left: 25px;
+            margin-top: 20px;
+        }
+
+        label 
+        {
+            color: #663F50;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input 
+        {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] 
+        {
+            background-color: #65E88E;
+            color: #663F50;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover 
+        {
+            background-color: #40DC9D;
         }
     </style>
 </head>

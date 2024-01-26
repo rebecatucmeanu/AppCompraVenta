@@ -6,14 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artículos BBDD</title>
     <style>
-        h1 
+        body 
         {
+            margin: 0;
+            background-color: #A4BBCE;
+            color: #663F50;
             padding-left: 25px;
         }
 
-        form {
+        h1 
+        {
+            color: #51EAD9;
+        }
+
+        form 
+        {
             padding-left: 43%;
             padding-top: 7%;
+        }
+
+        form div 
+        {
+            margin-bottom: 15px;
+        }
+
+        label 
+        {
+            color: #663F50;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input 
+        {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] 
+        {
+            background-color: #65E88E;
+            color: #663F50;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover 
+        {
+            background-color: #40DC9D;
+        }
+
+        p 
+        {
+            color: #51EAD9;
+        }
+
+        a 
+        {
+            color: #51EAD9;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        a:hover 
+        {
+            color: #40DC9D;
         }
     </style>
 </head>
@@ -37,11 +97,11 @@
             <input type="text" name="nombre"/><br>
         </div>
         <div>
-            <label for="nombre">Marca</label>
+            <label for="marca">Marca</label>
             <input type="text" name="marca"/><br>
         </div>
         <div>
-            <label for="nombre">Precio</label>
+            <label for="precio">Precio</label>
             <input type="text" name="precio"/><br>
         </div>
         <div>
