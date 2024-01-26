@@ -6,14 +6,16 @@
     body 
     {
         margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
+        background-color: #A4BBCE;
+        color: #663F50;
     }
 
     .menu 
     {
         overflow: hidden;
-        background-color: black;
+        background-color: #663F50;
         font-weight: bold;
+        color: #f2f2f2;
     }
 
     .menu a
@@ -28,13 +30,28 @@
 
     .menu a:hover
     {
-        background-color: #a742f5;
-        color: white;
+        background-color: #51EAD9;
+        color: #f2f2f2;
     }
 
     p 
     {
-        color: #a742f5;
+        color: #51EAD9;
+    }
+
+    button
+    {
+        background-color: #65E88E;
+        color: #663F50;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    button:hover
+    {
+        background-color: #40DC9D;
     }
 </style>
 </head>
@@ -53,3 +70,5 @@
         ?>
     </div>
     <a href="<?php echo base_url() ?>usuarios/cerrar_sesion"><button>Cerrar sesión</button></a>
+</body>
+</html>
